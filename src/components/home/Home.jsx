@@ -1,3 +1,4 @@
+import Navbar from '../Navbar';
 import Demo from './components/demo/Demo';
 import FeatureHighlights from './components/FeatureHighlights';
 import FlexibleComponents from './components/FlexibleComponents';
@@ -9,6 +10,7 @@ import Footer from './Footer';
 const Home = () => {
   return (
     <>
+      <Navbar bg="dark"/>
       <Intro />
       <Demo />
       <FlexibleComponents />

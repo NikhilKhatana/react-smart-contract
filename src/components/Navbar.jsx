@@ -4,7 +4,7 @@ import logoLight from '../img/logo/logo-light.png';
 import logoIcon from '../img/logo/logo-icon.png';
 import { useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ bg }) => {
   useEffect(() => {
     let navbar = document.querySelector('.navbar-sticky');
     if (navbar == null) return;
@@ -43,7 +43,7 @@ const Navbar = () => {
     }
   });
   return (
-  <header className="header navbar navbar-expand-lg navbar-dark navbar-floating navbar-sticky" data-fixed-element>
+  <header className={`header navbar navbar-expand-lg navbar-${bg} navbar-floating navbar-sticky`} data-fixed-element>
     <div className="container px-0 px-xl-3">
       <button className="navbar-toggler ms-n2 me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
         <span className="navbar-toggler-icon"></span>

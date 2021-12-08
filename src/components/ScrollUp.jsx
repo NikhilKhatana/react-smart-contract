@@ -17,9 +17,9 @@ const ScrollUp = () => {
     });
   });
   return (
-    <span class="btn-scroll-top" data-scroll data-fixed-element onClick={scrollTop} ref={scrollRef} style={{cursor: 'pointer'}}>
-      <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
-      <i class="btn-scroll-top-icon ai-arrow-up"></i>
+    <span className="btn-scroll-top" data-scroll data-fixed-element onClick={scrollTop} ref={scrollRef} style={{cursor: 'pointer'}}>
+      <span className="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+      <i className="btn-scroll-top-icon ai-arrow-up"></i>
     </span>
 )};
 

@@ -16887,10 +16887,7 @@ input[type=search]::-webkit-search-results-decoration {
   font-weight: normal;
   vertical-align: middle;
 }
-.dropdown-toggle::after {
-  margin-left: 0.25rem;
-  content: "\e92f";
-}
+
 .dropdown-toggle::before {
   margin-right: 0.25rem;
 }

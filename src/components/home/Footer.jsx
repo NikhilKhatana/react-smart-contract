@@ -16,7 +16,7 @@ const Footer = () => (
               <button className="btn btn-primary" type="submit" name="subscribe">Subscribe*</button>
             </div>
             <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
-              <input className="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabindex="-1" />
+              <input className="subscription-form-antispam" type="text" name="b_c7103e2c981361a6639545bd5_29ca296126" tabIndex="-1" />
             </div>
             <div className="form-text text-light opacity-50">*Subscribe to our newsletter to receive early discount offers and new templates info.</div>
             <div className="subscription-status"></div>

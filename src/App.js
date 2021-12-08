@@ -7,10 +7,10 @@ import {
 import SimpleStorageContract from "./contracts/SimpleStorage.json";
 import getWeb3 from "./getWeb3";
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Home from "./components/home/Home";
 import AccountProfile from "./components/Account Profile/AccountProfile";
 import ScrollUp from "./components/ScrollUp";
+import NotFound from "./components/NotFound";
 
 
 class App extends Component {
@@ -59,14 +59,20 @@ class App extends Component {
 
   render() {
     if (!this.state.web3) {
-      return <div>Loading Web3, accounts, and contract...</div>;
+      return  (
+      <div className="page-loading active">
+        <div className="page-loading-inner">
+          <div className="page-spinner"></div><span>Loading...</span>
+        </div>
+      </div>
+    );
     }
     return (
       <BrowserRouter>
-        <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/account-profile" element={<AccountProfile />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <ScrollUp/>
       </BrowserRouter>

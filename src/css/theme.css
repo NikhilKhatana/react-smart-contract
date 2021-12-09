@@ -23,6 +23,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+:root {
+  scroll-behavior: smooth;
+}
+
 .ai-activity:before {
   content: "\e900";
 }

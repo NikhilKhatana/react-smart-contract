@@ -53,15 +53,15 @@ const Intro = () => (
               pointerEvents: 'none',
               }}
             >
-              <ParallaxElement image={layer1} x={0.01} y={0.01}/>
-              <ParallaxElement image={layer2} index={2} x={0.03} y={0.03}/>
-              <ParallaxElement image={layer3} x={0.02} y={0.02}/>
-              <ParallaxElement image={layer4} index={3} x={0.01} y={0.01}/>
-              <ParallaxElement image={layer5} x={0.015} y={0.015}/>
-              <ParallaxElement image={layer6} index={4} x={0.025} y={0.025}/>
-              <ParallaxElement image={layer7} x={0.03} y={0.03}/>
-              <ParallaxElement image={layer8} x={0.04} y={0.04}/>
-              <ParallaxElement image={layer9} x={0.035} y={0.035}/>
+              <ParallaxElement image={layer1} x={0.02} y={-0.02}/>
+              <ParallaxElement image={layer2} index={2} x={0.04} y={-0.04}/>
+              <ParallaxElement image={layer3} x={0.04} y={-0.04}/>
+              <ParallaxElement image={layer4} index={3} x={0.03} y={-0.03}/>
+              <ParallaxElement image={layer5} x={0.035} y={-0.035}/>
+              <ParallaxElement image={layer6} index={4} x={0.045} y={-0.045}/>
+              <ParallaxElement image={layer7} x={0.05} y={-0.05}/>
+              <ParallaxElement image={layer8} x={0.05} y={-0.05}/>
+              <ParallaxElement image={layer9} x={0.055} y={-0.055}/>
             </ParallaxMousemove>
           </div>
         </div>

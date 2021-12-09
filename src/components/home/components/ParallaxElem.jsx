@@ -11,10 +11,6 @@ const ParallaxElement = ({ image, index, x, y }) => (
       config={{
         xFactor: x,
         yFactor: y,
-        springSettings: {
-          stiffness: 10,
-          damping: 10
-        }
       }}
     >
       <img src={image} alt="Layer" />
